@@ -2,6 +2,11 @@
     background-color: rgb(126, 133, 139);
 }
 
+
 .intro{
-    color: rgb(235, 110, 110);
+    color: white;
+}
+
+.tableheading{
+    color: red;
 }
