@@ -46,7 +46,7 @@
       .firstSection{
         display: flex;
         justify-content: space-around;
-        margin: 80px 0;
+        margin: 120px 0;
         align-items: center;
       }
       .firstSection > div{
@@ -62,18 +62,76 @@
       .purple{
          color: rgb(170, 107, 228);
       }
+      .text-gray{
+        color: gray;
+      }
       #element{
         color: rgb(170, 107, 228);
       }
       .secondSection{
         max-width: 80vw;
         margin: auto;
+        height: 92vh;
+      }
+      .secondSection h1{
+        font-size: 1.9rem;
+      }
+
+      main hr{
+        border: 0;
+        background-color: #9c97f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .study{
+        margin: 60px;
+      }
+      .data{
+        opacity: 0.3;
+      }
+      .projects{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-color:#9c97f1;
+      }
+      .thirdSection{
+        max-width: 80vw;
+        margin: auto;
+        height: 92vh;
+      }
+      .thirdSection h1{
+        font-size: 1.9rem;
+      }
+      .pro{
+        height: 300px;
+        text-align: center;
+        justify-content: center;
+        padding-top:5px;
+        border: 3px solid black;
+        line-height: 35px;
+      }
+      .prohead{
+        color:black;
+      }
+      #navbar {
+        position: sticky;
+        top: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      .fourthSection{
+        max-width: 80vw;
+        margin: auto;
+        height: 92vh;
+      }
+    .secondSection h1{
+        font-size: 1.9rem;
       }
     </style>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="navbar">
       <nav>
         <div class="left">Tushar's Portfolio</div>
         <div class="right">
@@ -101,11 +159,59 @@
                 <img src="bg.png" alt="developer image">
             </div>
         </section>
+<hr>
 
         <section class="secondSection">
-            <h1>Past Experience</h1>
+            <span class="text-gray">My Educational Journey</span>
+            <h1>Qualifications</h1>
+
+            <div class="qualification">
+                <div class="study">
+                    <p>Pune Vidyarthi Griha's College of Engineering and Technology</p>
+                    <p class="data">Completed Bachelor of Engineering in Information Technology from 2021-2025 with overall CGPA 8.53</p>
+                </div>
+                <div class="study">
+                    <p>Saint Monica English School</p>
+                    <p class="data">Completed Primary Education with 90% in SSC Exam</p>
+                </div>
+                <div class="study">
+                    <p>Dr R P Nath College of Science and Commerce</p>
+                    <p class="data">Completed Higher Secondary Education with 78.15% in HSC Exam</p>
+                </div>
+            </div>
+            </div>
         </section>
+<hr>
+
+        <section class="thirdSection">
+            <h1>My Projects</h1><br>
+            <div class="projects">
+                <div class="pro">
+                    <h3 class="prohead">Wanderlust</h3>
+                        <p>- Developed a full stack web application that mimics the core functionalities of the Airbnb platform which is responsive and userfriendly and deployed it on render.</p>
+                        <p>- Here user can rent their home on this website and any customer can view details and give their own review experienced by them. </p>
+                </div>
+                <div class="pro">
+                    <h3 class="prohead">Online Trading Platform</h3>
+                    <p>- Developed a stock trading platform using the MERN stack with real-time market data integration.</p>
+                    <p>- Implemented secure user authentication, responsive UI/UX, and a robust backend for efficient trading operations.</p>
+                </div>
+            </div>
+        </section>
+<hr>
     </main>
+
+    <footer>
+        <section class="fourthSection">
+            <h1>Contact</h1>
+
+            <div class="contact">
+                <div class="mail"><a>tusharjadhav162002@gmail.com</a></div>
+                <div class="phone"><a>+91 9767967213</a></div>
+                <div class="github"><a></a></div>
+            </div>
+        </section>   
+    </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
       <script>
     var typed = new Typed('#element', {
@@ -115,79 +221,3 @@
   </script>
   </body>
 </html>
-
-<!-- <header class="forcenter">
-        <h1 class="intro" id="name"><b>Tushar Jadhav</b></h1>
-        <p></p>
-        <div id="contact">
-            <p class="intro">Email: tusharjadhav162002@gmail.com</p>
-            <p class="intro">Mob no: 9767967213</p>
-        </div>
-    </header>
-    <hr>
-
-    <main class="forcenter">
-        <div class="forcenter">
-            <table>
-                <thead class="tableheading">
-                    <tr>
-                        <th>Education</th>
-                        <th>Score</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Pune Vidyarthi Griha's College of Engineering and Technology</td>
-                        <td>77.7%</td>
-                    </tr>
-                    <tr>
-                        <td>Dr R P Nath College of Science and Commerce</td>
-                        <td>78.15%</td>
-                    </tr>
-                    <tr>
-                        <td>Saint Monica English School</td>
-                        <td>90%</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-         
-        <hr>
-
-        <div>
-            <list>
-                <h2>Internships</h2>
-                <ul>
-                    <li>GurujiAir</li>
-                    <li>Congnifyz Technologies</li>
-                </ul>
-            </list>
-        </div>
-        <hr>
-
-        <div class="forcenter">
-            <form action="/">
-                <h3>Give Feedback</h3>
-                <label for="name">Enter your name :
-                    <input type="text" id="name" placeholder="Enter Your Name">
-                </label>
-                <br><br>
-
-                <label for="feedback">Feedback : 
-                    <textarea id="feedback" placeholder="Give feedback"></textarea>
-                </label>
-                <br><br>
-                <button class="submitbutton">Submit</button>
-            </form>
-        </div>
-
-    </main>
-    <hr>
-
-    <footer class="forcenter">
-        <div>
-            <p><i>LinkedIn</i></p>
-            <p><i>Instagram</i></p>
-            <p><i>Facebook</i></p>
-        </div>
-    </footer> -->
