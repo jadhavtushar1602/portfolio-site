@@ -1,13 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="forcenter">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif; 
+      }
+      nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90px;
+        background-color: rgb(18, 18, 62);
+      }
+      nav ul{
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li{
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover{
+        color: rgb(153, 153, 226);
+        font-size: 1.01rem;
+      }
+      .left{
+        font-size: 1.5rem;
+      }
+      .firstSection{
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 0;
+        align-items: center;
+      }
+      .firstSection > div{
+        width: 30%;
+      }
+      .leftSection{
+        font-size: 2rem;
+        /* color: rgb( #f9ce34, #ee2a7b, #6228d7); */
+      }
+      .rightSection img{
+        width: 80%;
+      }
+      .purple{
+         color: rgb(170, 107, 228);
+      }
+      #element{
+        color: rgb(170, 107, 228);
+      }
+      .secondSection{
+        max-width: 80vw;
+        margin: auto;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Tushar's Portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Tushar</span>
+                <div>and I am a Passionate</div>
+                <div>Web Developer</div>
+                <span id="element"></span>
+            </div>
+
+            <div class="rightSection">
+                <img src="bg.png" alt="developer image">
+            </div>
+        </section>
+
+        <section class="secondSection">
+            <h1>Past Experience</h1>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+    var typed = new Typed('#element', {
+      strings: ['Software Engineer', 'Web Developer', 'Web Designer', 'Graphis Designer'],
+      typeSpeed: 50,
+    });
+  </script>
+  </body>
+</html>
+
+<!-- <header class="forcenter">
         <h1 class="intro" id="name"><b>Tushar Jadhav</b></h1>
         <p></p>
         <div id="contact">
@@ -81,6 +190,4 @@
             <p><i>Instagram</i></p>
             <p><i>Facebook</i></p>
         </div>
-    </footer>
-</body>
-</html>
+    </footer> -->
